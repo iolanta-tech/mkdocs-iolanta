@@ -3,10 +3,9 @@ from logging import config as logging_config
 from typing import Any, Dict, NamedTuple, Optional, Union
 
 import rdflib
+from ldflex.ldflex import SelectResult
 from rdflib import Graph, term
 from typing_extensions import Protocol
-
-from ldflex.ldflex import SelectResult
 
 MKDOCS = rdflib.Namespace('https://mkdocs.iolanta.tech/')
 IOLANTA = rdflib.Namespace('https://iolanta.tech/')

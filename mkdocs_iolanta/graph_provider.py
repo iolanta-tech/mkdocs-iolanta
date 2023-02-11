@@ -2,7 +2,6 @@ import shelve  # noqa: S403
 from pathlib import Path
 
 import rdflib
-
 from iolanta.graph_providers.base import GraphProvider
 
 

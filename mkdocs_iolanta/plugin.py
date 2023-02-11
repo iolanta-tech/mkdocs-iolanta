@@ -1,15 +1,15 @@
 import functools
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Any, Dict, Optional
 
 from iolanta.iolanta import Iolanta
+from iolanta_jinja2.macros import template_render
 from mkdocs.config import Config
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import Files
 from mkdocs.structure.nav import Navigation
 from mkdocs.structure.pages import Page
-from iolanta_jinja2.macros import template_render
 
 
 class IolantaPlugin(BasePlugin):

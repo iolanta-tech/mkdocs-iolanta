@@ -1,8 +1,8 @@
 from pathlib import Path
 
+from ldflex import LDFlex
 from typer import Option, Typer
 
-from ldflex import LDFlex
 from mkdocs_iolanta.cli.formatters.csv import csv_print
 from mkdocs_iolanta.cli.formatters.json import print_json
 from mkdocs_iolanta.cli.formatters.pretty import pretty_print

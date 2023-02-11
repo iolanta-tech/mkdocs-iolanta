@@ -6,14 +6,6 @@ from functools import cached_property, partial
 from pathlib import Path
 from typing import Any, Callable, Dict, Optional, TypedDict, Union
 
-from mkdocs.config import Config
-from mkdocs.config.defaults import MkDocsConfig
-from mkdocs.plugins import BasePlugin
-from mkdocs.structure.files import Files
-from mkdocs.structure.nav import Navigation
-from mkdocs.structure.pages import Page
-from rdflib import SDO, ConjunctiveGraph, Namespace, URIRef
-
 from iolanta.conversions import path_to_url
 from iolanta.facet.errors import FacetNotFound
 from iolanta.iolanta import Iolanta
@@ -24,6 +16,14 @@ from iolanta.namespaces import IOLANTA
 from iolanta.parsers.yaml import YAML
 from iolanta.renderer import Render, render
 from iolanta.shortcuts import construct_root_loader
+from mkdocs.config import Config
+from mkdocs.config.defaults import MkDocsConfig
+from mkdocs.plugins import BasePlugin
+from mkdocs.structure.files import Files
+from mkdocs.structure.nav import Navigation
+from mkdocs.structure.pages import Page
+from rdflib import SDO, ConjunctiveGraph, Namespace, URIRef
+
 from mkdocs_iolanta.conversions import iri_by_page
 from mkdocs_iolanta.storage import save_graph
 from mkdocs_iolanta.types import MKDOCS
