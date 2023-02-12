@@ -806,14 +806,14 @@ files = [
 
 [[package]]
 name = "iolanta"
-version = "0.1.3"
+version = "1.0.2"
 description = "Semantic Web browser"
 category = "main"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = ">=3.10,<4.0"
 files = [
-    {file = "iolanta-0.1.3-py3-none-any.whl", hash = "sha256:4dd58fad79dc6c58e46a7521fee29c56dba4d8d7b78787e95a1a26ce3e2ea4c6"},
-    {file = "iolanta-0.1.3.tar.gz", hash = "sha256:13248da7f034a2a5fc513d4a46a1d084f630dba05cd7e55c72193d0b58301997"},
+    {file = "iolanta-1.0.2-py3-none-any.whl", hash = "sha256:622ce38f40a4ad71e5493fac43754e873610a7b6a0e099c72eba02d75c23fd6a"},
+    {file = "iolanta-1.0.2.tar.gz", hash = "sha256:daac8aea001446e26f449858768768ddad3fb0eea16b3e90f6f27e80fc630d8f"},
 ]
 
 [package.dependencies]
@@ -834,18 +834,18 @@ urlpath = ">=1.1.7,<2.0.0"
 
 [[package]]
 name = "iolanta-jinja2"
-version = "0.1.1"
+version = "0.1.2"
 description = "Render Jinja2 templates from Iolanta graph"
 category = "main"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "iolanta_jinja2-0.1.1-py3-none-any.whl", hash = "sha256:6d45c79af255fe9074a04d3e7177c634fbb1c00bcbc33051433316302870054d"},
-    {file = "iolanta_jinja2-0.1.1.tar.gz", hash = "sha256:c0c5509b696bfd23b01b5b91fa0b5279e21cb3ccbe29821c768795589323e82a"},
+    {file = "iolanta_jinja2-0.1.2-py3-none-any.whl", hash = "sha256:1ad0c19cdc7cd7ac72442a09b5c4aa77c24f69609e50f66370338cc20e68585a"},
+    {file = "iolanta_jinja2-0.1.2.tar.gz", hash = "sha256:3bb9864aef1afb6f6873ea677161ee1c8105a4fdef6213086023c93ed1758ccb"},
 ]
 
 [package.dependencies]
-iolanta = ">=0.1.1,<0.2.0"
+iolanta = ">=1.0.2,<2.0.0"
 Jinja2 = ">=3.1.2,<4.0.0"
 
 [[package]]
@@ -2250,4 +2250,4 @@ typing_extensions = ">=4.0,<5.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<4.0"
-content-hash = "ee6481c17bb6a0a22ee447e19dffbd5b650faefa9aac9f863593c377b4fa8e39"
+content-hash = "b0088b29357aa43e1f838d1d9980726d3f26645aae3c19beb2b615ca45478fcc"
