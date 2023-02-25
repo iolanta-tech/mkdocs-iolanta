@@ -1,0 +1,9 @@
+$id: plugins
+table:columns:
+  - plugin
+  - description
+table:rows:
+  - plugin:
+      rdfs:label: iolanta-tables
+      schema:url: https://iolanta.tech/tables/
+    description: Render HTML tables on your MkDocs site from YAML descriptions instead of clumsy Markdown markup

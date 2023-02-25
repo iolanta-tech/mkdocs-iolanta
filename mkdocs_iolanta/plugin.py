@@ -1,6 +1,6 @@
 import functools
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Optional
 
 from iolanta.iolanta import Iolanta
 from iolanta_jinja2.macros import template_render
@@ -8,16 +8,14 @@ from mkdocs.config import Config
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import Files
-from mkdocs.structure.nav import Navigation
-from mkdocs.structure.pages import Page
 
 
-class IolantaPlugin(BasePlugin):
+class IolantaPlugin(BasePlugin):   # type: ignore
     """Integrate MkDocs + iolanta."""
 
     iolanta: Iolanta
 
-    def on_files(
+    def on_files(    # type: ignore
         self,
         files: Files,
         *,
@@ -27,22 +25,12 @@ class IolantaPlugin(BasePlugin):
         self.iolanta.add(source=Path(config.docs_dir))
 
     def on_config(self, config: MkDocsConfig) -> Optional[Config]:
-        config.extra['iolanta'] = self.iolanta = Iolanta()
-        return config
+        """Expose configuration & template variables."""
+        self.iolanta = Iolanta()
 
-    def on_page_context(
-        self,
-        context: Dict[str, Any],
-        *,
-        page: Page,
-        config: MkDocsConfig,
-        nav: Navigation,
-    ) -> Optional[Dict[str, Any]]:
-        """Make render() macro available to pages."""
-        return {
-            'render': functools.partial(
-                template_render,
-                iolanta=self.iolanta,
-            ),
-            **context,
-        }
+        config.extra['iolanta'] = self.iolanta
+        config.extra['render'] = functools.partial(
+            template_render,
+            iolanta=self.iolanta,
+        )
+        return config
