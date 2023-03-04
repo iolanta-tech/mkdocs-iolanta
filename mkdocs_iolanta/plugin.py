@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Optional
 
 from iolanta.iolanta import Iolanta
+from iolanta.namespaces import IOLANTA
 from iolanta_jinja2.macros import template_render
 from mkdocs.config import Config
 from mkdocs.config.defaults import MkDocsConfig
@@ -32,5 +33,6 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         config.extra['render'] = functools.partial(
             template_render,
             iolanta=self.iolanta,
+            environments=[IOLANTA.html],
         )
         return config
