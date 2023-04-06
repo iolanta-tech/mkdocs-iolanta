@@ -12,6 +12,7 @@ python = ">=3.10,<4.0"
 iolanta-jinja2 = "^0.1.2"
 mkdocs = "^1.4.2"
 mkdocs-macros-plugin = "^0.7.0"
+iolanta = "^1.0.14"
 
 [tool.poetry.group.dev.dependencies]
 mkdocs-awesome-pages-plugin = "^2.8.0"
@@ -26,3 +27,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.plugins."mkdocs.plugins"]
 iolanta = "mkdocs_iolanta.plugin:IolantaPlugin"
+
+[tool.poetry.plugins."iolanta.plugins"]
+mkdocs = "mkdocs_iolanta:MkdocsIolanta"
