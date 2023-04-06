@@ -2,8 +2,6 @@ from mkdocs.config import load_config
 from more_itertools import consume
 from typer import Typer
 
-from mkdocs_iolanta.cli import context, show, sparql
-
 
 def generate_app() -> Typer:
     app = Typer()
@@ -30,6 +28,3 @@ def generate_app() -> Typer:
     )
 
     return app
-
-
-app = generate_app()

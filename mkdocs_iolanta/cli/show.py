@@ -3,12 +3,8 @@ from pathlib import Path
 from ldflex import LDFlex
 from typer import Option, Typer
 
-from mkdocs_iolanta.cli.formatters.csv import csv_print
-from mkdocs_iolanta.cli.formatters.json import print_json
-from mkdocs_iolanta.cli.formatters.pretty import pretty_print
 from mkdocs_iolanta.conversions import src_path_to_iri
 from mkdocs_iolanta.storage import load_graph
-from mkdocs_iolanta.types import QueryResultsFormat
 
 app = Typer(name='show')
 
@@ -28,10 +24,6 @@ def find_docs_dir() -> Path:
 @app.command(name='file')
 def show_file(
     path: Path,
-    fmt: QueryResultsFormat = Option(
-        default=QueryResultsFormat.PRETTY,
-        metavar='format',
-    ),
 ):
     """Show graph from a file."""
     docs_dir = find_docs_dir()
