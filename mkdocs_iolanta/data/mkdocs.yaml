@@ -99,13 +99,6 @@
 - $id: owl:propertyChainAxiom
   domain: owl:ObjectProperty
 
-- $id: python://mkdocs_iolanta.facets.DateLiteral
-
-- $id: rdfs:Literal
-  iolanta:instanceFacet:
-    $id: python://mkdocs_iolanta.facets.Default
-    iolanta:supports: iolanta:html
-
 - $id: mkdocs:url
   ∘:
     - mkdocs:subjectOf
