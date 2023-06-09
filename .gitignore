@@ -216,3 +216,4 @@ site/
 
 .idea/
 .python-version
+.flakeheaven_cache

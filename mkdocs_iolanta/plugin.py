@@ -17,7 +17,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
 
     iolanta: Iolanta
 
-    def on_files(    # type: ignore
+    def on_files(
         self,
         files: Files,
         *,
@@ -40,14 +40,16 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         return config
 
     def on_nav(
-        self, nav: Navigation, *, config: MkDocsConfig, files: Files
+        self, nav: Navigation, *, config: MkDocsConfig, files: Files,
     ) -> Optional[Navigation]:
         """Assign schema:url to pages."""
-        self.iolanta.add([
-            {
-                '$id': f'file://{page.file.abs_src_path}',
-                'mkdocs:url': f'/{page.url}',
-            }
-            for page in nav.pages
-        ])
+        self.iolanta.add({
+            '$included': [
+                {
+                    '$id': f'file://{page.file.abs_src_path}',
+                    'mkdocs:url': f'/{page.url}',
+                }
+                for page in nav.pages
+            ],
+        })
         return nav
