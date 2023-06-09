@@ -26,6 +26,9 @@ class MkdocsMaterialIcon(HTMLFacet):
     `<… markdown="1">` can be used to render markdown emoji inside HTML but that
     is complicated. This attribute must be set for **each** of the nested
     HTML tags.
+
+    # FIXME This is undocumented because user must find the path to the icon
+        file themselves, which is… kind of ugly.
     """
 
     def show(self) -> html_tag:

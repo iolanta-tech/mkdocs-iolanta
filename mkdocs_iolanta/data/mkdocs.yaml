@@ -99,7 +99,7 @@
 - $id: owl:propertyChainAxiom
   domain: owl:ObjectProperty
 
-- $id: mkdocs:url
-  ∘:
-    - mkdocs:subjectOf
-    - mkdocs:url
+- $id: mkdocs:position
+  rdfs:label: Page position in navigation
+  rdfs:subPropertyOf:
+    $id: schema:position

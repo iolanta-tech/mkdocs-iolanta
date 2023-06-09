@@ -9,6 +9,7 @@ from mkdocs.config import Config
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import Files
+from mkdocs.structure.nav import Navigation
 
 
 class IolantaPlugin(BasePlugin):   # type: ignore
@@ -24,6 +25,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
     ) -> Optional[Files]:
         """Construct the local iolanta instance and load files."""
         self.iolanta.add(source=Path(config.docs_dir))
+        return files
 
     def on_config(self, config: MkDocsConfig) -> Optional[Config]:
         """Expose configuration & template variables."""
@@ -36,3 +38,16 @@ class IolantaPlugin(BasePlugin):   # type: ignore
             environments=[IOLANTA.html],
         )
         return config
+
+    def on_nav(
+        self, nav: Navigation, *, config: MkDocsConfig, files: Files
+    ) -> Optional[Navigation]:
+        """Assign schema:url to pages."""
+        self.iolanta.add([
+            {
+                '$id': f'file://{page.file.abs_src_path}',
+                'mkdocs:url': f'/{page.url}',
+            }
+            for page in nav.pages
+        ])
+        return nav
