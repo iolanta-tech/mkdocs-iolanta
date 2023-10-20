@@ -8,4 +8,4 @@ title: mkdocs-material
 
 ??? tip "Rating of themes by :simple-github: stars as of :material-calendar-clock: {{ render("github-themes-generation-date") }}"
     {{ render("github-themes") }}
-
+    Run `j generate compare-themes` to refresh the rating.

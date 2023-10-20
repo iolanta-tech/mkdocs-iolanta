@@ -1,3 +1,3 @@
 SELECT * WHERE {
-    ?page mkdocs:template ?template .
+    ?page mkdocs-material:template ?template .
 }

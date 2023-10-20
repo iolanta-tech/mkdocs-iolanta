@@ -1,5 +1,5 @@
 ---
-title: "mkdocs:template"
+title: "mkdocs-material:template"
 hide:
   - toc
 ---
@@ -16,7 +16,7 @@ template: announce.html
 Markdown content…
 ```
 
-## `mkdocs:template` RDF property
+## `mkdocs-material:template` RDF property
 
 Alternatively, we can state the following anywhere in the site.
 
@@ -31,7 +31,7 @@ $id: PageWithCustomTemplateClass
 owl:equivalentClass:
   $type: owl:Restriction
   owl:onProperty:
-    $id: mkdocs:template
+    $id: mkdocs-material:template
   owl:hasValue:
     $id: custom_template.html
 ```

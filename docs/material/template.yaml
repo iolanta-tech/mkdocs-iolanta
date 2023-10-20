@@ -1,2 +1,2 @@
 $id: local:material/template.md
-mkdocs:template: announce.html
+mkdocs-material:template: announce.html
