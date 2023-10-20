@@ -1,0 +1,162 @@
+[
+  {
+    "fullName": "squidfunk/mkdocs-material",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "mkdocs-material",
+    "owner": {
+      "id": "MDQ6VXNlcjkzMjE1Ng==",
+      "is_bot": false,
+      "login": "squidfunk",
+      "type": "User",
+      "url": "https://github.com/squidfunk"
+    },
+    "pushedAt": "2023-10-19T15:35:37Z",
+    "stargazersCount": 15852,
+    "url": "https://github.com/squidfunk/mkdocs-material"
+  },
+  {
+    "fullName": "bashtage/sphinx-material",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "sphinx-material",
+    "owner": {
+      "id": "MDQ6VXNlcjU1ODUyMjE=",
+      "is_bot": false,
+      "login": "bashtage",
+      "type": "User",
+      "url": "https://github.com/bashtage"
+    },
+    "pushedAt": "2023-08-18T11:15:40Z",
+    "stargazersCount": 293,
+    "url": "https://github.com/bashtage/sphinx-material"
+  },
+  {
+    "fullName": "Orbiter/MkDocs-Theme-Cinder-Superhero",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "MkDocs-Theme-Cinder-Superhero",
+    "owner": {
+      "id": "MDQ6VXNlcjIzODczMA==",
+      "is_bot": false,
+      "login": "Orbiter",
+      "type": "User",
+      "url": "https://github.com/Orbiter"
+    },
+    "pushedAt": "2021-10-03T09:38:06Z",
+    "stargazersCount": 282,
+    "url": "https://github.com/Orbiter/MkDocs-Theme-Cinder-Superhero"
+  },
+  {
+    "fullName": "chrissimpkins/cinder",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "cinder",
+    "owner": {
+      "id": "MDQ6VXNlcjQyNDk1OTE=",
+      "is_bot": false,
+      "login": "chrissimpkins",
+      "type": "User",
+      "url": "https://github.com/chrissimpkins"
+    },
+    "pushedAt": "2023-03-07T11:46:26Z",
+    "stargazersCount": 190,
+    "url": "https://github.com/chrissimpkins/cinder"
+  },
+  {
+    "fullName": "mkdocs/mkdocs-bootswatch",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "mkdocs-bootswatch",
+    "owner": {
+      "id": "MDEyOk9yZ2FuaXphdGlvbjk2OTI3NDE=",
+      "is_bot": false,
+      "login": "mkdocs",
+      "type": "Organization",
+      "url": "https://github.com/mkdocs"
+    },
+    "pushedAt": "2021-12-22T18:09:16Z",
+    "stargazersCount": 133,
+    "url": "https://github.com/mkdocs/mkdocs-bootswatch"
+  },
+  {
+    "fullName": "jbms/sphinx-immaterial",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "sphinx-immaterial",
+    "owner": {
+      "id": "MDQ6VXNlcjQyMTE5NDY=",
+      "is_bot": false,
+      "login": "jbms",
+      "type": "User",
+      "url": "https://github.com/jbms"
+    },
+    "pushedAt": "2023-10-16T01:26:44Z",
+    "stargazersCount": 131,
+    "url": "https://github.com/jbms/sphinx-immaterial"
+  },
+  {
+    "fullName": "RetroPie/RetroPie-Docs",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "RetroPie-Docs",
+    "owner": {
+      "id": "MDEyOk9yZ2FuaXphdGlvbjExMzc4MjA0",
+      "is_bot": false,
+      "login": "RetroPie",
+      "type": "Organization",
+      "url": "https://github.com/RetroPie"
+    },
+    "pushedAt": "2023-10-10T03:00:33Z",
+    "stargazersCount": 102,
+    "url": "https://github.com/RetroPie/RetroPie-Docs"
+  },
+  {
+    "fullName": "gristlabs/mkdocs-windmill",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "mkdocs-windmill",
+    "owner": {
+      "id": "MDEyOk9yZ2FuaXphdGlvbjE5OTc4MDA1",
+      "is_bot": false,
+      "login": "gristlabs",
+      "type": "Organization",
+      "url": "https://github.com/gristlabs"
+    },
+    "pushedAt": "2022-12-09T08:16:24Z",
+    "stargazersCount": 97,
+    "url": "https://github.com/gristlabs/mkdocs-windmill"
+  },
+  {
+    "fullName": "mkdocs/mkdocs-bootstrap",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "mkdocs-bootstrap",
+    "owner": {
+      "id": "MDEyOk9yZ2FuaXphdGlvbjk2OTI3NDE=",
+      "is_bot": false,
+      "login": "mkdocs",
+      "type": "Organization",
+      "url": "https://github.com/mkdocs"
+    },
+    "pushedAt": "2023-07-28T13:51:34Z",
+    "stargazersCount": 73,
+    "url": "https://github.com/mkdocs/mkdocs-bootstrap"
+  },
+  {
+    "fullName": "cjsheets/mkdocs-rtd-dropdown",
+    "isArchived": false,
+    "isDisabled": false,
+    "name": "mkdocs-rtd-dropdown",
+    "owner": {
+      "id": "MDQ6VXNlcjMwNTM4Mjk=",
+      "is_bot": false,
+      "login": "cjsheets",
+      "type": "User",
+      "url": "https://github.com/cjsheets"
+    },
+    "pushedAt": "2018-11-21T04:34:04Z",
+    "stargazersCount": 69,
+    "url": "https://github.com/cjsheets/mkdocs-rtd-dropdown"
+  }
+]
