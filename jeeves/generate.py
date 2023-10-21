@@ -68,3 +68,14 @@ def compare_themes():
     )
 
     console.print('[OK]', style='green')
+
+
+@generate.command()
+def cover_image():
+    """Generate cover image for the front page."""
+    assets = Path(__file__).parent.parent / 'docs/assets'
+    sh.convert(
+        assets / 'cover-original.png',
+        '-crop', 'x300+0+300',
+        assets / 'cover.png',
+    )
