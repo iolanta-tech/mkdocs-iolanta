@@ -6,6 +6,16 @@ hide:
 
 # :octicons-book-24: [mkdocs](https://mkdocs.org) + :eye: [iolanta](https://iolanta.tech)
 
+[![License](https://img.shields.io/github/license/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/blob/main/LICENSE)
+[![Deploy](https://github.com/iolanta-tech/mkdocs-iolanta/actions/workflows/deploy.yml/badge.svg)](https://github.com/iolanta-tech/mkdocs-iolanta/actions)
+[![Stars](https://img.shields.io/github/stars/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/stargazers)
+[![Forks](https://img.shields.io/github/forks/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/network/members)
+[![Issues](https://img.shields.io/github/issues/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/commits/main)
+[![Contributors](https://img.shields.io/github/contributors/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/graphs/contributors)
+
+
 ![](assets/cover.png)
 
 ## Features
