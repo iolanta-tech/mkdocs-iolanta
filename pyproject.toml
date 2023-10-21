@@ -16,11 +16,10 @@ iolanta = "^1.0.14"
 
 [tool.poetry.group.dev.dependencies]
 mkdocs-awesome-pages-plugin = "^2.8.0"
-mkdocs-material = "^9.0.12"
 mkdocstrings-python = "^0.8.3"
-jeeves-yeti-pyproject = "^0.2.11"
 iolanta-tables = "^0.1.0"
 types-python-dateutil = "^2.8.19.14"
+jeeves-yeti-pyproject = "^0.2.26"
 
 [build-system]
 requires = ["poetry-core"]
