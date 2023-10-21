@@ -4,31 +4,74 @@ hide:
   - toc
 ---
 
-> Integrate [MkDocs](https://mkdocs.org) static site builder with [iolanta](https://iolanta.tech) Linked Data visualization framework.
+# :octicons-book-24: [mkdocs](https://mkdocs.org) + :eye: [iolanta](https://iolanta.tech)
+
+[![License](https://img.shields.io/github/license/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/blob/main/LICENSE)
+[![Deploy](https://github.com/iolanta-tech/mkdocs-iolanta/actions/workflows/deploy.yml/badge.svg)](https://github.com/iolanta-tech/mkdocs-iolanta/actions)
+[![Stars](https://img.shields.io/github/stars/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/stargazers)
+[![Forks](https://img.shields.io/github/forks/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/network/members)
+[![Issues](https://img.shields.io/github/issues/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/commits/main)
+[![Contributors](https://img.shields.io/github/contributors/iolanta-tech/mkdocs-iolanta)](https://github.com/iolanta-tech/mkdocs-iolanta/graphs/contributors)
+
+
+![](assets/cover.png)
 
 ## Features
 
-Visualize:
+By integrating MkDocs static site builder with Iolanta knowledge management workspace, you can empower your static site with:
 
-* Links,
-* Tables,
-* Roadmaps
-* …and more
+!!! success inline "Links"
+    Easily link from page to page; check out {{ render("linking-to-pages") }} for more info. 
 
-on your MkDocs static site!
+!!! success inline "Tables"
+    Visualize tables from YAML data with [iolanta-tables](https://tables.iolanta.tech) plugin.
 
+!!! example inline "Roadmaps"
+    Draw roadmaps with [iolanta-roadmap](https://roadmap.iolanta.tech) plugin.
+
+!!! example inline "ADRs"
+    Manage Architecture Decision Records with [iolanta-adr](https://adr.iolanta.tech).
+
+<br clear="both"/>
 
 ## Installation
 
-Python ⩾ 3.10 is required.
+:simple-python: Python ⩾ 3.10 required.
 
-```shell
-pip install mkdocs-iolanta
-```
+
+`mkdocs-iolanta` is on [:simple-pypi: PyPI](https://pypi.org/project/mkdocs-iolanta).
+
+=== "pip"
+    ```bash
+    pip install mkdocs-iolanta
+    ```
+
+=== ":simple-poetry: poetry"
+    ```bash
+    poetry add mkdocs-iolanta
+    ```
+
+=== "pipenv"
+    ```bash
+    pipenv install mkdocs-iolanta
+    ```
+
+=== "pdm"
+    ```bash
+    pdm add mkdocs-iolanta
+    ```
+
+=== ":simple-condaforge: conda"
+
+    ```bash
+    conda install -c conda-forge mkdocs-iolanta
+    ```
 
 ## Configuration
 
-Open your `mkdocs.yml` configuration file and configure its `plugins` as follows:
+Open your `mkdocs.yml` configuration file and configure its `plugins` section as follows:
 
 ```yaml
 plugins:

@@ -1,5 +1,6 @@
 ---
 title: Linking to pages
+$id: linking-to-pages
 ---
 
 Insert links to pages and maintain their correctness even when moving `.md` files all over the place.

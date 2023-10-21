@@ -36,7 +36,7 @@
   subPropertyOf: schema:about
   inverseOf: mkdocs:subjectOf
 
-- $id: mkdocs:template
+- $id: mkdocs-material:template
   domain: mkdocs:HasTemplate
   range: rdfs:Literal
   label: HTML/Jinja2 template
@@ -57,7 +57,7 @@
 
 - $id: mkdocs:PageFacet
   ⊂: iolanta:Facet
-  label: Class of Iolanta facets which, instead of pointing to a piece of executable code, direct us to a template using `mkdocs:template` property. Those are used to render MkDocs pages.
+  label: Class of Iolanta facets which, instead of pointing to a piece of executable code, direct us to a template using `mkdocs-material:template` property. Those are used to render MkDocs pages.
   ≡:
     - $type: owl:Restriction
       onProperty: iolanta:supports
@@ -81,7 +81,7 @@
   ≡:
     ∩:
       - iolanta:Facet      # Should be a Facet of course
-      - mkdocs:HasTemplate   # And should have an mkdocs:template defined
+      - mkdocs:HasTemplate   # And should have an mkdocs-material:template defined
 
 # Each such facet by definition supports Octadocs as environment
 - $id: mkdocs:PageFacet
