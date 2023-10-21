@@ -24,7 +24,7 @@ Alternatively, we can state the following anywhere in the site.
 
 ## Assign custom template to multiple pages at once
 
-Use the power of :owl: OWL.
+Use the power of [:owl: OWL](https://www.w3.org/TR/owl2-overview/).
 
 ```yaml
 $id: PageWithCustomTemplateClass
