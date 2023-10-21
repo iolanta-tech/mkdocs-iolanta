@@ -54,6 +54,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
     def on_page_markdown(
         self, markdown: str, *, page: Page, config: MkDocsConfig, files: Files
     ) -> Optional[str]:
+        """Assign page `template` property from `mkdocs-material:template`."""
         if template := self.template_per_page.get(page.file.src_path):
             page.meta['template'] = template
 

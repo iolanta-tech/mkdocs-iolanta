@@ -79,3 +79,14 @@ def cover_image():
         '-crop', 'x300+0+300',
         assets / 'cover.png',
     )
+
+
+@generate.command()
+def icon():
+    """Generate site icon image."""
+    assets = Path(__file__).parent.parent / 'docs/assets'
+    sh.convert(
+        assets / 'icon-original.png',
+        '-scale', 'x128',
+        assets / 'icon.png',
+    )

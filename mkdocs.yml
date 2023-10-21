@@ -32,6 +32,10 @@ plugins:
 
 theme:
   name: material
+  logo: assets/icon.png
+  palette:
+    primary: black
+    scheme: slate
   custom_dir: templates
   features:
     - navigation.sections
