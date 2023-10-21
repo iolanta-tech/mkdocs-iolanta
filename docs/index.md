@@ -34,6 +34,9 @@ By integrating MkDocs static site builder with Iolanta knowledge management work
 !!! example inline "ADRs"
     Manage Architecture Decision Records with [iolanta-adr](https://adr.iolanta.tech).
 
+!!! failure inline "Something missing?"
+    Or anything doesn't work? — submit :heavy_plus_sign: [an issue](https://github.com/iolanta-tech/mkdocs-iolanta/issues)!
+
 <br clear="both"/>
 
 ## Installation
