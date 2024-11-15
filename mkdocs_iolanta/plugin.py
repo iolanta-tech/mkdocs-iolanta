@@ -1,6 +1,6 @@
 from functools import cached_property, partial
 from pathlib import Path
-from typing import Optional, Any
+from typing import Optional
 
 from iolanta.iolanta import Iolanta
 from iolanta.namespaces import IOLANTA
@@ -11,7 +11,7 @@ from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import Files
 from mkdocs.structure.nav import Navigation
 from mkdocs.structure.pages import Page
-from urlpath import URL
+from yarl import URL
 
 
 class IolantaPlugin(BasePlugin):   # type: ignore
@@ -41,7 +41,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         self.iolanta.add(source=Path(config.docs_dir))
         return files
 
-    def on_config(self, config: MkDocsConfig) -> Optional[Config]:
+    def on_config(self, config: MkDocsConfig) -> Optional[MkDocsConfig]:
         """Expose configuration & template variables."""
         config.extra['iolanta'] = self.iolanta
         config.extra['render'] = partial(
@@ -52,7 +52,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         return config
 
     def on_page_markdown(
-        self, markdown: str, *, page: Page, config: MkDocsConfig, files: Files
+        self, markdown: str, *, page: Page, config: MkDocsConfig, files: Files,
     ) -> Optional[str]:
         """Assign page `template` property from `mkdocs-material:template`."""
         if template := self.template_per_page.get(page.file.src_path):

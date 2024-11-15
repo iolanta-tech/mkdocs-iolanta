@@ -3,10 +3,8 @@ import json
 import os
 from pathlib import Path
 
-import dateutil.utils
-from rich.console import Console
-
 import sh
+from rich.console import Console
 from typer import Typer
 
 generate = Typer()
@@ -47,7 +45,7 @@ def compare_themes():
         _env={
             **os.environ,
             'NO_COLOR': '1',
-        }
+        },
     )
 
     (output_path / 'github-themes.json').write_text(
