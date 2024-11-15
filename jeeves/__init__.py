@@ -1,4 +1,5 @@
 from sh import mkdocs
+
 from jeeves.generate import generate
 
 

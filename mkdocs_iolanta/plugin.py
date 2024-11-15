@@ -1,6 +1,6 @@
 from functools import cached_property, partial
 from pathlib import Path
-from typing import Optional, Any
+from typing import Any, Optional
 
 from iolanta.iolanta import Iolanta
 from iolanta.namespaces import IOLANTA
@@ -52,7 +52,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         return config
 
     def on_page_markdown(
-        self, markdown: str, *, page: Page, config: MkDocsConfig, files: Files
+        self, markdown: str, *, page: Page, config: MkDocsConfig, files: Files,
     ) -> Optional[str]:
         """Assign page `template` property from `mkdocs-material:template`."""
         if template := self.template_per_page.get(page.file.src_path):
