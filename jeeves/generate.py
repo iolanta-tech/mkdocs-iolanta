@@ -3,7 +3,6 @@ import json
 import os
 from pathlib import Path
 
-import dateutil.utils
 import sh
 from rich.console import Console
 from typer import Typer

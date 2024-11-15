@@ -1,6 +1,6 @@
 from functools import cached_property, partial
 from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 
 from iolanta.iolanta import Iolanta
 from iolanta.namespaces import IOLANTA
@@ -41,7 +41,7 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         self.iolanta.add(source=Path(config.docs_dir))
         return files
 
-    def on_config(self, config: MkDocsConfig) -> Optional[Config]:
+    def on_config(self, config: MkDocsConfig) -> Optional[MkDocsConfig]:
         """Expose configuration & template variables."""
         config.extra['iolanta'] = self.iolanta
         config.extra['render'] = partial(
