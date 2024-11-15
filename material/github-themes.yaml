@@ -1,0 +1,15 @@
+- $id: pushedAt
+  rdfs:domain:
+    $id: MkdocsThemeGithubRepo
+
+- $id: github-themes
+  table:columns:
+    - table:self
+    - $id: pushedAt
+      rdfs:label: "Last Commit"
+    - $id: stargazersCount
+      rdfs:label: Github Stars
+  table:class: MkdocsThemeGithubRepo
+  table:order-by:
+    - stargazersCount:
+        table:direction: desc
