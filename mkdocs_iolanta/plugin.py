@@ -11,7 +11,7 @@ from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import Files
 from mkdocs.structure.nav import Navigation
 from mkdocs.structure.pages import Page
-from urlpath import URL
+from yarl import URL
 
 
 class IolantaPlugin(BasePlugin):   # type: ignore
