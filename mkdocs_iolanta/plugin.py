@@ -59,18 +59,3 @@ class IolantaPlugin(BasePlugin):   # type: ignore
             page.meta['template'] = template
 
         return markdown
-
-    def on_nav(
-        self, nav: Navigation, *, config: MkDocsConfig, files: Files,
-    ) -> Optional[Navigation]:
-        """Assign schema:url to pages."""
-        self.iolanta.add({
-            '$included': [
-                {
-                    '$id': f'file://{page.file.abs_src_path}',
-                    'mkdocs:url': f'/{page.url}',
-                }
-                for page in nav.pages
-            ],
-        })
-        return nav

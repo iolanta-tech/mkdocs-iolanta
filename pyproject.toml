@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mkdocs-iolanta"
-version = "0.1.13"
+version = "0.1.14"
 description = "MkDocs plugin to integrate with Iolanta semantic web framework."
 authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
 license = "MIT"
