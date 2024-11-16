@@ -17,7 +17,7 @@
     "@context":
       "@base": https://github.com/squidfunk/mkdocs-material/blob/master/material/.icons/
 
-  title: mkdocs:title
+  title: https://mkdocs.iolanta.tech/title
 
 $included:
   - $id: onProperty
