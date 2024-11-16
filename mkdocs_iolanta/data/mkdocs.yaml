@@ -10,6 +10,7 @@
 
   mkdocs: https://mkdocs.iolanta.tech/
   mkdocs-material: https://mkdocs.iolanta.tech/material/
+  schema: https://schema.org/
 
   mkdocs-material:icon:
     "@type": "@id"
