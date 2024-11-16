@@ -1,6 +1,7 @@
 "@context":
   "@import": https://json-ld.org/contexts/dollar-convenience.jsonld
 
+  xsd: http://www.w3.org/2001/XMLSchema#
   vann: http://purl.org/vocab/vann/
   foaf: http://xmlns.com/foaf/0.1/
   owl: http://www.w3.org/2002/07/owl#
