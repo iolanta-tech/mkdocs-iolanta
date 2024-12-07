@@ -19,7 +19,11 @@ and here is a Markdown file:
 
 That yields:
 
-{{ render('plugins') }} 
+```
+{% raw %}
+{{ render('plugins') }}
+{% endraw %}
+``` 
 
 …as rendered via [iolanta-tables](https://iolanta.tech/tables).
 

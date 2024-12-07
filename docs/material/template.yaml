@@ -1,2 +1,5 @@
+"@context":
+
+  mkdocs-material: https://mkdocs.iolanta.tech/material/
 $id: local:material/template.md
 mkdocs-material:template: announce.html

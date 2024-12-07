@@ -48,5 +48,5 @@ plugins:
 
 1. The `search` plugin is built-in and automatically enabled if `mkdocs.yml` does not specify any `plugins` at all. But if it does, this built-in plugin must be enabled explicitly.
 2. Support `iolanta` capabilities for this documentation site.
-3. This enables [mkdocs-macros-plugin](https://mkdocs-macros-plugin.readthedocs.io) which is required to utilize Iolanta capabilities on MkDocs pages, such as {{ render("render") }} macro.
+3. This enables [mkdocs-macros-plugin](https://mkdocs-macros-plugin.readthedocs.io) which is required to utilize Iolanta capabilities on MkDocs pages, such as {% raw %}{{ render("render") }}{% endraw %} macro.
 4. This setting is highly recommended. If there is an error during rendering MkDocs macros, including those macros provided by Iolanta, the site build will throw an error — making the issue easier to notice both on local development and in CI.

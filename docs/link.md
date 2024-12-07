@@ -21,4 +21,4 @@ Using YAML frontmatter:
 
 ## This yields a link to the said page
 
-Here it is: {{ render("render") }}.
+Here it is: `{% raw %}{{ render("render") }}{% endraw %}`.

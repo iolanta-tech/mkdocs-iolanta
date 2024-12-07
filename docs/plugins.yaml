@@ -1,3 +1,7 @@
+"@context":
+  "@import": https://json-ld.org/contexts/dollar-convenience.jsonld
+  table: https://tables.iolanta.tech/
+
 $id: plugins
 table:columns:
   - plugin
