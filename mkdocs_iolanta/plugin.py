@@ -3,15 +3,21 @@ from pathlib import Path
 from typing import Optional
 
 from iolanta.iolanta import Iolanta
-from iolanta.namespaces import IOLANTA
-from iolanta_jinja2.macros import template_render
-from mkdocs.config import Config
+from iolanta.models import NotLiteralNode
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import Files
-from mkdocs.structure.nav import Navigation
 from mkdocs.structure.pages import Page
+from rdflib import URIRef
 from yarl import URL
+
+
+def template_render(node: NotLiteralNode, iolanta: Iolanta):
+    """Render a given node on an HTML page."""
+    return iolanta.render(
+        node,
+        as_datatype=URIRef('https://www.w3.org/1999/02/22-rdf-syntax-ns#HTML'),
+    )
 
 
 class IolantaPlugin(BasePlugin):   # type: ignore
@@ -47,7 +53,6 @@ class IolantaPlugin(BasePlugin):   # type: ignore
         config.extra['render'] = partial(
             template_render,
             iolanta=self.iolanta,
-            environments=[IOLANTA.html],
         )
         return config
 
