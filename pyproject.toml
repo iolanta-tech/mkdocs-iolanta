@@ -10,7 +10,7 @@ packages = [{include = "mkdocs_iolanta"}]
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
 mkdocs = ">=1.4.2"
-mkdocs-macros-plugin = ">=0.7,<1.5"
+mkdocs-macros-plugin = ">=0.7,<1.6"
 iolanta = ">=1.1.0"
 
 [tool.poetry.group.dev.dependencies]
