@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "fullName": "rdfs:label",
+    "url": "schema:url"
+  }
+}
